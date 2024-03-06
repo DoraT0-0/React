@@ -1,0 +1,13 @@
+function App() {
+	function func(arg, event) {
+		console.log(arg, event);
+	}
+	
+	return <div>
+		<button onClick={event => func('eee', 
+			event)}>act</button> 
+	</div>;
+}
+Расскажите, как работает приведенный код.
+
+При нажатии на кнопку будет вызывается функция func, параметрами кторой будет строка и объект event.
